@@ -78,18 +78,18 @@ function App() {
 
   return (
     <div className="app-container">
-      <audio ref={audioRef} src="/background-music.mp3" loop preload="auto" />
+      <audio ref={audioRef} src={process.env.PUBLIC_URL + "/background-music.mp3"} loop preload="auto" />
       
       <button className="theme-toggle" onClick={toggleTheme}>
         <img 
-          src={isDarkMode ? "/icons/light-mode.png" : "/icons/dark-mode.png"} 
+          src={isDarkMode ? process.env.PUBLIC_URL + "/icons/light-mode.png" : process.env.PUBLIC_URL + "/icons/dark-mode.png"} 
           alt={isDarkMode ? "Switch to Light Mode" : "Switch to Dark Mode"} 
         />
       </button>
 
       <div className="card">
         <div className="logo">
-          <img src="/me.png" alt="Star Logo" className="star-logo" />
+          <img src={process.env.PUBLIC_URL + "/me.png"} alt="Star Logo" className="star-logo" />
         </div>
         
         <nav className="nav-bar">
@@ -105,31 +105,31 @@ function App() {
           <div className="nav-icons">
             <button onClick={toggleWindow('about')} className="nav-button">
               <div className="icon-circle">
-                <img src="/icons/about.png" alt="About" />
+                <img src={process.env.PUBLIC_URL + "/icons/about.png"} alt="About" />
               </div>
               <span>About</span>
             </button>
             <button onClick={toggleWindow('links')} className="nav-button">
               <div className="icon-circle">
-                <img src="/icons/links.png" alt="Links" />
+                <img src={process.env.PUBLIC_URL + "/icons/links.png"} alt="Links" />
               </div>
               <span>Links</span>
             </button>
             <button onClick={toggleWindow('work')} className="nav-button">
               <div className="icon-circle">
-                <img src="/icons/work.png" alt="Work" />
+                <img src={process.env.PUBLIC_URL + "/icons/work.png"} alt="Work" />
               </div>
               <span>Work</span>
             </button>
             <button onClick={toggleWindow('faq')} className="nav-button">
               <div className="icon-circle">
-                <img src="/icons/faq.png" alt="FAQ" />
+                <img src={process.env.PUBLIC_URL + "/icons/faq.png"} alt="FAQ" />
               </div>
               <span>FAQ</span>
             </button>
             <button onClick={toggleWindow('contact')} className="nav-button">
               <div className="icon-circle">
-                <img src="/icons/contact.png" alt="Contact" />
+                <img src={process.env.PUBLIC_URL + "/icons/contact.png"} alt="Contact" />
               </div>
               <span>Contact</span>
             </button>
@@ -151,7 +151,7 @@ function App() {
 
       <button className="music-toggle" onClick={toggleMusic}>
         <img 
-          src={isMusicPlaying ? "/music-on.png" : "/music-off.png"} 
+          src={isMusicPlaying ? process.env.PUBLIC_URL + "/music-on.png" : process.env.PUBLIC_URL + "/music-off.png"} 
           alt={isMusicPlaying ? "Stop Music" : "Play Music"} 
         />
       </button>
@@ -164,7 +164,7 @@ function App() {
         >
           <div className="about-content">
             <div className="about-header">
-              <img src="/profile-pic.jpg" alt="Profile" className="about-header-image" />
+              <img src={process.env.PUBLIC_URL + "/profile-pic.jpg"} alt="Profile" className="about-header-image" />
               <div className="about-header-info">
                 <h2>Alenn</h2>
                 <p>Software Engineer, GenAI & ML</p>
@@ -311,22 +311,22 @@ function App() {
                 <h3>ILLUSTRATION</h3>
                 <div className="image-grid">
                   <div className="image-item">
-                    <img src="/illustrations/illustration1.jpg" alt="illustration 1" />
+                    <img src={process.env.PUBLIC_URL + "/illustrations/illustration1.jpg"} alt="illustration 1" />
                   </div>
                   <div className="image-item">
-                    <img src="/illustrations/illustration2.jpg" alt="illustration 2" />
+                    <img src={process.env.PUBLIC_URL + "/illustrations/illustration2.jpg"} alt="illustration 2" />
                   </div>
                   <div className="image-item">
-                    <img src="/illustrations/illustration3.jpg" alt="illustration 3" />
+                    <img src={process.env.PUBLIC_URL + "/illustrations/illustration3.jpg"} alt="illustration 3" />
                   </div>
                   <div className="image-item">
-                    <img src="/illustrations/illustration4.jpg" alt="illustration 4" />
+                    <img src={process.env.PUBLIC_URL + "/illustrations/illustration4.jpg"} alt="illustration 4" />
                   </div>
                   <div className="image-item">
-                    <img src="/illustrations/illustration5.jpg" alt="illustration 5" />
+                    <img src={process.env.PUBLIC_URL + "/illustrations/illustration5.jpg"} alt="illustration 5" />
                   </div>
                   <div className="image-item">
-                    <img src="/illustrations/illustration6.jpg" alt="illustration 6" />
+                    <img src={process.env.PUBLIC_URL + "/illustrations/illustration6.jpg"} alt="illustration 6" />
                   </div>
                 </div>
                 <div className="social-links-work">

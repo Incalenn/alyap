@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/alyap/static/css/main.7da99a48.css",
-    "main.js": "/alyap/static/js/main.aed84087.js",
+    "main.js": "/alyap/static/js/main.4f29ad17.js",
     "static/js/453.aac68abc.chunk.js": "/alyap/static/js/453.aac68abc.chunk.js",
     "index.html": "/alyap/index.html",
     "main.7da99a48.css.map": "/alyap/static/css/main.7da99a48.css.map",
-    "main.aed84087.js.map": "/alyap/static/js/main.aed84087.js.map",
+    "main.4f29ad17.js.map": "/alyap/static/js/main.4f29ad17.js.map",
     "453.aac68abc.chunk.js.map": "/alyap/static/js/453.aac68abc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7da99a48.css",
-    "static/js/main.aed84087.js"
+    "static/js/main.4f29ad17.js"
   ]
 }

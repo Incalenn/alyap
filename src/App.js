@@ -202,37 +202,37 @@ function App() {
           onClose={toggleWindow('links')}
         >
           <div className="links-content">
-          <a href="https://www.linkedin.com/in/vanalennpham/" target="_blank" rel="noopener noreferrer" className="link-item">
+            <a href="https://www.linkedin.com/in/vanalennpham/" target="_blank" rel="noopener noreferrer" className="link-item">
               <div className="link-icon">
-                <img src="/icons/linkedin.png" alt="LinkedIn" />
+                <img src={process.env.PUBLIC_URL + "/icons/linkedin.png"} alt="LinkedIn" />
               </div>
               <span className="link-label">LinkedIn</span>
             </a>
 
             <a href="https://x.com/_55aph" target="_blank" rel="noopener noreferrer" className="link-item">
               <div className="link-icon">
-                <img src="/icons/twitter.png" alt="Twitter" />
+                <img src={process.env.PUBLIC_URL + "/icons/twitter.png"} alt="Twitter" />
               </div>
               <span className="link-label">Twitter</span>
             </a>
 
             <a href="https://youtube.com/your-channel" target="_blank" rel="noopener noreferrer" className="link-item">
               <div className="link-icon">
-                <img src="/icons/youtube.png" alt="YouTube" />
+                <img src={process.env.PUBLIC_URL + "/icons/youtube.png"} alt="YouTube" />
               </div>
               <span className="link-label">YouTube</span>
             </a>
 
             <a href="https://www.instagram.com/alennpham/" target="_blank" rel="noopener noreferrer" className="link-item">
               <div className="link-icon">
-                <img src="/icons/instagram.png" alt="Instagram" />
+                <img src={process.env.PUBLIC_URL + "/icons/instagram.png"} alt="Instagram" />
               </div>
               <span className="link-label">Instagram</span>
             </a>
 
             <a href="https://discord.gg/your-server" target="_blank" rel="noopener noreferrer" className="link-item">
               <div className="link-icon">
-                <img src="/icons/discord.png" alt="Discord" />
+                <img src={process.env.PUBLIC_URL + "/icons/discord.png"} alt="Discord" />
               </div>
               <span className="link-label">Discord</span>
             </a>
@@ -438,7 +438,7 @@ function App() {
             <p>i would love to hear from you! i don't really check my social media messages, sometimes i'm a bit tunnel-visioned on whatever i'm doing hehe. please direct questions to my email instead 👍</p>
             
             <div className="contact-illustration">
-              <img src="/icons/mail-illustration.png" alt="Mail Illustration" />
+              <img src={process.env.PUBLIC_URL + "/icons/mail-illustration.png"} alt="Mail Illustration" />
             </div>
 
             <div className="contact-email">

@@ -774,6 +774,7 @@ h1, h2, h3, h4, h5, h6 {
 
 [data-theme='dark'] .window-content {
   background-color: var(--window-bg);
+  color: var(--text-color);
 }
 
 [data-theme='dark'] .project-card h3 {
@@ -946,4 +947,262 @@ h1, h2, h3, h4, h5, h6 {
 
 [data-theme='dark'] .nav-icons {
   color: var(--text-color);
+}
+
+/* Add these responsive styles at the end of your CSS file */
+
+/* Tablet Styles (768px and below) */
+@media screen and (max-width: 768px) {
+  .app-container {
+    padding: 10px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .content h1 {
+    font-size: 2.2em;
+  }
+
+  .nav-icons {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .popup-window {
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+  }
+
+  .links-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 10px;
+  }
+}
+
+/* Mobile Styles (480px and below) */
+@media screen and (max-width: 480px) {
+  .card {
+    padding: 15px;
+  }
+
+  .content h1 {
+    font-size: 1.8em;
+  }
+
+  .subtitle {
+    font-size: 1em;
+  }
+
+  .nav-icons {
+    gap: 15px;
+  }
+
+  .icon-circle {
+    width: 50px;
+    height: 50px;
+  }
+
+  .icon-circle img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .nav-button span {
+    font-size: 12px;
+  }
+
+  .popup-window {
+    width: 95%;
+    margin: 10px auto;
+  }
+
+  .about-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-header-image {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 10px;
+  }
+
+  .links-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .work-section h2 {
+    font-size: 18px;
+  }
+
+  .skill-tag {
+    font-size: 12px;
+  }
+
+  .project-card {
+    padding: 10px;
+  }
+
+  .project-card h3 {
+    font-size: 16px;
+  }
+
+  .faq-question {
+    font-size: 13px;
+    padding: 12px;
+  }
+
+  .faq-answer {
+    font-size: 13px;
+  }
+
+  .contact-content {
+    padding: 15px;
+  }
+
+  .contact-illustration img {
+    width: 120px;
+  }
+
+  .theme-toggle {
+    width: 35px;
+    height: 35px;
+    top: 10px;
+    right: 10px;
+  }
+
+  .music-toggle {
+    width: 45px;
+    height: 45px;
+    bottom: 15px;
+    right: 15px;
+  }
+}
+
+/* Handle height-based issues */
+@media screen and (max-height: 700px) {
+  .popup-window {
+    max-height: 85vh;
+  }
+
+  .about-content {
+    height: auto;
+    max-height: 70vh;
+  }
+
+  .window-content {
+    max-height: calc(85vh - 45px);
+  }
+}
+
+/* Ensure popup windows don't overflow on very small screens */
+@media screen and (max-width: 380px) {
+  .popup-window {
+    width: 98%;
+    margin: 5px auto;
+  }
+
+  .window-header {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  .about-scrollable {
+    padding: 15px 10px;
+  }
+
+  .about-header-info h2 {
+    font-size: 24px;
+  }
+}
+
+/* Adjust popup positioning for better mobile experience */
+@media screen and (max-width: 768px) {
+  .popup-window {
+    position: fixed;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+  }
+}
+
+/* Mobile-specific styles for popup windows */
+@media (max-width: 768px) {
+  .popup-window.touch-device {
+    position: fixed !important;
+    width: 90% !important;
+    max-height: 85vh !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    border-radius: 12px;
+    margin: 0 !important;
+  }
+
+  .popup-window.touch-device .window-header {
+    padding: 16px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+
+  .popup-window.touch-device .close-button {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .popup-window.touch-device .window-content {
+    max-height: calc(85vh - 60px);
+    height: auto;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 16px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Ensure content is scrollable on mobile */
+  .about-content,
+  .links-content,
+  .work-content,
+  .faq-content,
+  .contact-content {
+    height: auto;
+    max-height: none;
+    overflow: visible;
+  }
+
+  /* Remove any fixed heights that might cause issues */
+  .about-scrollable {
+    height: auto;
+    max-height: none;
+  }
+
+  /* Ensure the popup stays within viewport */
+  .windows-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+  }
 } 

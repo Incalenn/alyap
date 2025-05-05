@@ -6,6 +6,8 @@ As someone passionate about both technology and creativity, I wanted my personal
 
 This wasn’t just about building a site. It was about **exploring how AI and prompt engineering** can accelerate design, coding, and UX thinking. What you see here is the result of hours of collaboration—me and an AI assistant, side by side.
 
+![ALYAP Light Mode](alyap1.png)
+![ALYAP Dark Mode](alyap2.png)
 ---
 
 ## Project Overview

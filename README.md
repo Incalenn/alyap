@@ -2,7 +2,7 @@
 
 ## Introduction
 
-As someone passionate about both technology and creativity, I wanted my personal website to reflect not just who I am—but also **how I work**. I built this portfolio using **React**, with the assistance of **Cursor**, an AI-augmented IDE that became a true creative partner throughout the process.
+As someone passionate about both technology and creativity, I wanted my personal website to reflect not just who I am—but also **how I work**. I built this portfolio using **React**, with the assistance of **Cursor**, an AI-augmented IDE that became a true creative partner throughout the process which roughly took 1h30-2h.
 
 This wasn’t just about building a site. It was about **exploring how AI and prompt engineering** can accelerate design, coding, and UX thinking. What you see here is the result of hours of collaboration—me and an AI assistant, side by side.
 
